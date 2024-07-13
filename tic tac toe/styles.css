@@ -1,0 +1,36 @@
+h2{
+    text-align: center;
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    width: 300px;
+    height: 300px;
+    margin:0 auto;
+    border: 2px solid black;
+    
+  }
+
+  .cell {
+    background-color: #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+
+  .cell.X {
+    color: blue;
+  }
+
+  .cell.O {
+    color: rgb(137, 20, 20);
+  }
